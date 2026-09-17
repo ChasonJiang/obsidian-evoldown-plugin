@@ -35,7 +35,7 @@ Content for Transfer1.
 #v Verification Description2
 Content for Verification.
 
-#c "Custom tag" Title Transfer1
+#c TagName Title Transfer1
 Content for the custom tag.
 ```
 
