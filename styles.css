@@ -92,3 +92,30 @@ button.evoldown-reference:disabled { cursor: default; text-decoration: underline
 .evoldown-editable-title { cursor: text; }
 .evoldown-editable-title:focus-visible { outline: 2px solid var(--interactive-accent); outline-offset: 3px; border-radius: 2px; }
 
+/* Native PDF export uses a separate light-themed print document. */
+@media print {
+  .evoldown-heading,
+  .evoldown-heading * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .evoldown-heading {
+    break-inside: avoid;
+    break-after: avoid;
+    page-break-inside: avoid;
+    page-break-after: avoid;
+  }
+  .evoldown-heading button.evoldown-reference {
+    display: inline-flex !important;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+    color: var(--text-muted, #777);
+    opacity: .62;
+  }
+  .evoldown-heading .evoldown-icon,
+  .evoldown-heading .evoldown-chain { flex-shrink: 0; }
+  .evoldown-highlight { animation: none; outline: none; box-shadow: none; }
+  .evoldown-editable-title:focus-visible,
+  button.evoldown-reference:focus-visible { outline: none; }
+}

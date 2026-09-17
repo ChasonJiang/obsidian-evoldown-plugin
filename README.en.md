@@ -44,7 +44,8 @@ Content for the custom tag.
 - Supports Reading view and Live Preview. In Live Preview, click a title, type icon, or custom tag to edit it.
 - Click a referenced title to jump to its heading in the current note. If multiple headings share a title, the first match is used.
 - Choose a heading level from H1–H6 under **Settings → Evoldown**. The default is H6.
-- Enable Obsidian's core **Outline** plugin to display custom headings at the selected level and click entries to navigate to them.
+- Open **Outline** to display custom headings at the selected level and click entries to navigate to them.
+- Use Obsidian’s native **Export to PDF** to preserve Evoldown headings, icons, custom tags, and reference styling. References in the PDF are visual only; plugin navigation is not available.
 
 ## Development
 

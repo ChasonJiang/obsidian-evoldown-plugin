@@ -1,7 +1,7 @@
 {
   "id": "evoldown",
   "name": "Evoldown",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "minAppVersion": "1.5.7",
   "description": "为 Obsidian 添加 Evoldown 语法支持。支持 #d、#e、#t、#v、#c 五种自定义标签。",
   "author": "Chason Jiang",

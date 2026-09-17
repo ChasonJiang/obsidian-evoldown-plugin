@@ -5,6 +5,7 @@ const {Decoration, EditorView, WidgetType, ViewPlugin} = require('@codemirror/vi
 const {parseDocument} = require('./parser');
 const {createHeader} = require('./header');
 const {sourceFieldOffset, clickedTextOffset} = require('./editing');
+const {renderPdfExport} = require('./pdf-export');
 const {OutlineBridge} = require('./outline');
 const refreshHeadings = StateEffect.define();
 function headingLevel(value) { return Number.isInteger(value) && value >= 1 && value <= 6 ? value : 6; }
@@ -100,7 +101,10 @@ module.exports = class EvoldownPlugin extends Plugin {
     this.registerMarkdownPostProcessor(async (element, context) => {
       if (element.closest('[data-evoldown-render]')) return;
       const info = context.getSectionInfo(element);
-      if (!info) return;
+      if (!info) {
+        await renderPdfExport(this,element,context,MarkdownRenderer,MarkdownRenderChild);
+        return;
+      }
       const parsed = parseDocument(info.text);
       const first = info.lineStart, last = info.lineEnd + 1;
       const blocks = parsed.blocks.filter(block => block.start < last && block.end > first);
