@@ -1,6 +1,6 @@
 # Evoldown
 
-为 Obsidian 添加 [Evoldown](https://www.modevol.com/evoldown)语法支持。支持 `#d`、`#e`、`#t`、`#v`、`#c` 五种自定义标签。
+为 Obsidian 添加 Evoldown 语法支持。支持 `#d`、`#e`、`#t`、`#v`、`#c` 五种自定义标签。
 
 ![Evoldown 效果预览](preview.png)
 
