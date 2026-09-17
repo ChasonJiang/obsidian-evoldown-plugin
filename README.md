@@ -1,5 +1,6 @@
 # obsidian-evoldown-plugin
 
+简体中文 | [English](README.en.md)
 
 为 Obsidian 添加 Evoldown 语法支持。支持 `#d`、`#e`、`#t`、`#v`、`#c` 五种自定义标签。
 
