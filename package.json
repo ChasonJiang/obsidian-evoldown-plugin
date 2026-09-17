@@ -1,0 +1,14 @@
+{
+  "name": "evoldown",
+  "version": "1.2.0",
+  "private": true,
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node --test tests/*.test.cjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "description": "为 Obsidian 添加 Evoldown 语法支持。支持 #d、#e、#t、#v、#c 五种自定义标签。",
+  "homepage": "https://www.modevol.com/evoldown"
+}

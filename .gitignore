@@ -1,0 +1,14 @@
+# Local reference material (never commit)
+/local-references/
+/label.html
+/Evoldown.md
+/实现效果.png
+
+# Generated previews and release packages
+/dist/
+/preview.html
+
+# Local dependencies and system files
+/node_modules/
+.DS_Store
+*.log

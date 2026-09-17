@@ -1,0 +1,94 @@
+/* Reading headings use native h1–h6 theme styles; body keeps normal spacing. */
+.evoldown-heading { display: flex; flex-wrap: wrap; align-items: center; gap: .5em; }
+.evoldown-title { overflow-wrap: anywhere; }
+.evoldown-icon { display: inline-flex; align-items: center; justify-content: center; width: min(1.35em, 1lh); height: min(1.35em, 1lh); border-radius: .28em; flex-shrink: 0; background: color-mix(in srgb, currentColor 19%, transparent); }
+.evoldown-icon svg { width: 1em; height: 1em; }
+.evoldown-type-d { color: #397fb4; }
+.evoldown-type-e { color: #bf5659; }
+.evoldown-type-t { color: #a57a2d; }
+.evoldown-type-v { color: #7763d2; }
+.evoldown-type-c { color: #808080; }
+.evoldown-chain { display: inline-flex; width: .8em; height: .8em; flex-shrink: 0; }
+.evoldown-chain svg { width: 100%; height: 100%; transform: rotate(35deg); }
+.evoldown-label { padding: 0 .45em; border-radius: .3em; background: color-mix(in srgb, var(--text-muted, #888) 20%, transparent); color: var(--text-muted, #888); font-size: .77em; font-weight: 400; }
+button.evoldown-reference { all: unset; display: inline-flex; gap: .5em; align-items: center; color: var(--text-muted, #999); opacity: .62; cursor: pointer; font: inherit; max-width: 100%; overflow-wrap: anywhere; }
+button.evoldown-reference:hover, button.evoldown-reference:focus-visible { opacity: 1; color: var(--text-accent, #397fb4); }
+button.evoldown-reference:focus-visible { outline: 2px solid var(--interactive-accent, #397fb4); outline-offset: 3px; border-radius: 3px; }
+button.evoldown-reference:disabled { cursor: default; text-decoration: underline dotted; }
+.evoldown-body:empty { display: none; }
+/* Keep the widget within the same line box as the editable source text.
+   Baseline-aligned inline-flex icons otherwise add descent below the line. */
+.cm-line .evoldown-heading { display: inline-flex; vertical-align: top; line-height: inherit; }
+.markdown-source-view.mod-cm6 .cm-line.evoldown-editor-heading .cm-hashtag {
+  font: inherit;
+  line-height: inherit;
+  padding-block: 0;
+  border-block-width: 0;
+}
+.evoldown-highlight { animation: evoldown-flash 1.4s ease-out; }
+@keyframes evoldown-flash { from { box-shadow: 0 0 0 2px var(--interactive-accent, #397fb4); } to { box-shadow: 0 0 0 2px transparent; } }
+@media (prefers-reduced-motion: reduce) { .evoldown-highlight { animation: none; outline: 2px solid var(--interactive-accent); } }
+
+.markdown-source-view.mod-cm6 .cm-line.evoldown-editor-heading.HyperMD-header-1 {
+  font-family: var(--h1-font, var(--font-text));
+  font-size: var(--h1-size);
+  font-weight: var(--h1-weight);
+  font-style: var(--h1-style);
+  font-variant: var(--h1-variant);
+  line-height: var(--h1-line-height);
+  color: var(--h1-color, var(--text-normal));
+}
+
+.markdown-source-view.mod-cm6 .cm-line.evoldown-editor-heading.HyperMD-header-2 {
+  font-family: var(--h2-font, var(--font-text));
+  font-size: var(--h2-size);
+  font-weight: var(--h2-weight);
+  font-style: var(--h2-style);
+  font-variant: var(--h2-variant);
+  line-height: var(--h2-line-height);
+  color: var(--h2-color, var(--text-normal));
+}
+
+.markdown-source-view.mod-cm6 .cm-line.evoldown-editor-heading.HyperMD-header-3 {
+  font-family: var(--h3-font, var(--font-text));
+  font-size: var(--h3-size);
+  font-weight: var(--h3-weight);
+  font-style: var(--h3-style);
+  font-variant: var(--h3-variant);
+  line-height: var(--h3-line-height);
+  color: var(--h3-color, var(--text-normal));
+}
+
+.markdown-source-view.mod-cm6 .cm-line.evoldown-editor-heading.HyperMD-header-4 {
+  font-family: var(--h4-font, var(--font-text));
+  font-size: var(--h4-size);
+  font-weight: var(--h4-weight);
+  font-style: var(--h4-style);
+  font-variant: var(--h4-variant);
+  line-height: var(--h4-line-height);
+  color: var(--h4-color, var(--text-normal));
+}
+
+.markdown-source-view.mod-cm6 .cm-line.evoldown-editor-heading.HyperMD-header-5 {
+  font-family: var(--h5-font, var(--font-text));
+  font-size: var(--h5-size);
+  font-weight: var(--h5-weight);
+  font-style: var(--h5-style);
+  font-variant: var(--h5-variant);
+  line-height: var(--h5-line-height);
+  color: var(--h5-color, var(--text-normal));
+}
+
+.markdown-source-view.mod-cm6 .cm-line.evoldown-editor-heading.HyperMD-header-6 {
+  font-family: var(--h6-font, var(--font-text));
+  font-size: var(--h6-size);
+  font-weight: var(--h6-weight);
+  font-style: var(--h6-style);
+  font-variant: var(--h6-variant);
+  line-height: var(--h6-line-height);
+  color: var(--h6-color, var(--text-normal));
+}
+
+.evoldown-editable-title { cursor: text; }
+.evoldown-editable-title:focus-visible { outline: 2px solid var(--interactive-accent); outline-offset: 3px; border-radius: 2px; }
+
