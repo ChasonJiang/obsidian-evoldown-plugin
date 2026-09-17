@@ -8,7 +8,7 @@
 
 要求 Obsidian 1.5.7 或以上。在 Releases 中下载 evoldown.zip并解压， 放入笔记库的 `.obsidian/plugins`文件夹下，在「设置 → 第三方插件」中启用 Evoldown。
 
-升级时覆盖这三个文件，再重新启用插件。
+升级时覆盖该文件夹，再重新启用插件。
 
 ## 语法
 
