@@ -2,7 +2,7 @@
 
 [简体中文](README.md) | English
 
-Adds Evoldown syntax support to Obsidian with five custom tags: `#d`, `#e`, `#t`, `#v`, and `#c`.
+Adds [Evoldown](https://www.modevol.com/episode/ffz248e5lk1xwjxcia8uk6qy) syntax support to Obsidian with five custom tags: `#d`, `#e`, `#t`, `#v`, and `#c`.
 
 ![Evoldown preview](preview.png)
 
